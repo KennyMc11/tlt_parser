@@ -7,7 +7,7 @@ from tkinter import messagebox
 def download_data():
     try:
         # Загружаем исторические данные по TLT
-        tlt = yf.Ticker("TLT")
+        tlt = yf.Ticker("NVDA")
         df = tlt.history(period="max")
 
         # Убираем таймзону, иначе Excel ругается
